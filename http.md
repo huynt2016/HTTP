@@ -116,7 +116,7 @@
 - Chi tiết Status-Code
 
    Status-Code = 
-         "100": Tiếp tục 
+       | "100": Tiếp tục 
        | "101": Switching Protocols 
        | "200": OK 
        | "201": Tạo 
