@@ -91,6 +91,9 @@
                    | Referer               
                    | TE                       
                    | User-Agent       `
+####c. Bắt gói tin Request bằng WireShark:
+
+<img src="http://img.prntscr.com/img?url=http://i.imgur.com/VrRMjLI.png">
 
 ###2.Bản tin Response
 - Là bản tin phản hồi lại của Server sau khi nhận được yêu cầu của Client
@@ -159,6 +162,10 @@
 	       | "504": Gateway Time-out 
 	       | "505": HTTP Version không được hỗ trợ 
 	   
+- Bắt gói tin HTTP Request bằng WireShark
+
+<img src="http://img.prntscr.com/img?url=http://i.imgur.com/hWnNLwl.png">
+
 ##V. Tham khảo
 - https://github.com/NguyenHoaiNam/HTTP--Hypertext-transfer-protocol
 - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Server_response
