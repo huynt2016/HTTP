@@ -34,12 +34,12 @@
 ###1.Bản tin request
 - Là tin nhắn yêu cầu từ client gửi đến server. Có cấu trúc như sau:
 
-	Request       = Request-Line              
+`	Request       = Request-Line              
                      *(( general-header        
 						| request-header         
 						| entity-header ) CRLF)  
                      CRLF
-                     [ message-body ]     
+                     [ message-body ]     `
 					 
 ####a. Request-Line  
 - Cấu trúc:
@@ -52,7 +52,7 @@
 	
 - Danh sách Method:
 	
-	Method         = "OPTIONS"        
+`	Method         = "OPTIONS"        
                    | "GET"              
                    | "HEAD"             
                    | "POST"           
@@ -60,19 +60,19 @@
                    | "TRACE"          
                    | "CONNECT"             
                    | extension-method
-    extension-method = token
+    extension-method = token`
 
 - Request-URI:
 
-    Request-URI    = "*" 
+   ` Request-URI    = "*" 
                    | absoluteURI 
                    | abs_path [ "?" query ] 
-                   | authority
+                   | authority`
 				   
 ####b. Request-header
 - Cấu trúc:
 
-    request-header = Accept                   
+    `request-header = Accept                   
                    | Accept-Charset       
                    | Accept-Encoding          
                    | Accept-Language        
@@ -87,22 +87,22 @@
                    | Range                
                    | Referer               
                    | TE                       
-                   | User-Agent       
+                   | User-Agent       `
 
 ###2.Bản tin Response
 - Là bản tin phản hồi lại của Server sau khi nhận được yêu cầu của Client
 - Cấu trúc:
 
-    Response      = Status-Line              
+    `Response      = Status-Line              
                     *(( general-header        
                      | response-header        
                      | entity-header ) CRLF)  
                     CRLF
-                    [ message-body ]        
+                    [ message-body ]        `
 			
 - Status-Line
 
-	Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF		
+	`Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF`		
 
 - Các chữ số đầu tiên của Status-Code định nghĩa lớp của phản ứng. Hai chữ số cuối cùng không có bất kỳ vai trò phân loại. Có 5 giá trị cho các chữ số đầu tiên:
 <ul>
