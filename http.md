@@ -192,6 +192,7 @@ Ta có thể nhận biết thông tin các dòng như:
 ###Bước2:Cấu hình cơ bản
 `vi /etc/httpd/conf/httpd.conf`
 - Sửa thông tin các dòng
+
 # line 44: change
 ServerTokens Prod
 # line 76: change to ON
@@ -208,13 +209,17 @@ DirectoryIndex index.html index.htm
 ServerSignature Off
 # line 759: comment out
 #AddDefaultCharset UTF-8
+
 - Khởi động webserver bằng lệnh
 `/etc/rc.d/init.d/httpd start`
 
 `chkconfig httpd on`
+
 ###Bước 3:Tạo trang html test
 - Vào trang index bằng lệnh
+
 `vi /var/www/html/index.html`
+
 - Tạo thông tin trang
 
 <html>
