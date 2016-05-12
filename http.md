@@ -13,6 +13,7 @@
 - HTTP sử dụng port 80 (mặc định nhưng có thể thay đổi) để giao tiếp với các client và sử dụng bản tin response để đáp ứng lại bản tin request của client.
 - Các bước giao tiếp giữa web-client và web-serverl:
 
+<img src="http://www.tutorialspoint.com/security_testing/images/http_Protocol.jpg">
 ###Bước 1: Thiết lập kết nối
 - Kết nối được thiết lập theo phương thức bắt tay 3 bước.
 
