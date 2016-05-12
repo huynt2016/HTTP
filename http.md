@@ -41,6 +41,7 @@
                      CRLF
                      [ message-body ]     
 					 
+
 ####a. Request-Line  
 - Cấu trúc:
 `Request-Line   = Method SP Request-URI SP HTTP-Version CRLF`
@@ -67,6 +68,7 @@
                    | abs_path [ "?" query ] 
                    | authority
 				   
+
 ####b. Request-header
 - Cấu trúc:
    	request-header = Accept                   
@@ -101,6 +103,7 @@
 `Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF`		
 
 - Các chữ số đầu tiên của Status-Code định nghĩa lớp của phản ứng. Hai chữ số cuối cùng không có bất kỳ vai trò phân loại. Có 5 giá trị cho các chữ số đầu tiên:
+
 <ul>
 <li>1xx: Informational - Yêu cầu nhận được, quá trình tiếp tục</li>
 <li>2xx: Success - Các hành động đã được nhận thành công, hiểu và chấp nhận</li>
