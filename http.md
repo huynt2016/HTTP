@@ -34,14 +34,14 @@
 ##IV.Chi tiết bản tin HTTP
 ###1.Bản tin request
 - Là tin nhắn yêu cầu từ client gửi đến server. Có cấu trúc như sau:
-
+```
 	Request       = Request-Line              
                      *(( general-header        
 						| request-header         
 						| entity-header ) CRLF)  
                      CRLF
                      [ message-body ]     
-					 
+```					 
 
 ####a. Request-Line  
 - Cấu trúc:
@@ -53,7 +53,7 @@
 `GET http://www.example.org/pub/WWW/TheProject.html HTTP/1.1`
 	
 - Danh sách Method:
-	
+```	
 	Method         = "OPTIONS"        
                    | "GET"              
                    | "HEAD"             
@@ -63,18 +63,19 @@
                    | "CONNECT"             
                    | extension-method
     extension-method = token
+```
 
 - Request-URI:
-
+```
    	Request-URI    = "*" 
                    | absoluteURI 
                    | abs_path [ "?" query ] 
                    | authority
-				   
+```				   
 
 ####b. Request-header
 - Cấu trúc:
-
+```
    	request-header = Accept                   
                    | Accept-Charset       
                    | Accept-Encoding          
@@ -90,7 +91,9 @@
                    | Range                
                    | Referer               
                    | TE                       
-                   | User-Agent       `
+                   | User-Agent
+```
+                   
 ####c. Bắt gói tin Request bằng WireShark:
 
 <img src="http://img.prntscr.com/img?url=http://i.imgur.com/VrRMjLI.png">
@@ -107,14 +110,14 @@ Ta có thể nhận biết thông tin các dòng như:
 ###2.Bản tin Response
 - Là bản tin phản hồi lại của Server sau khi nhận được yêu cầu của Client
 - Cấu trúc:
-
+```
     	Response      = Status-Line              
                     *(( general-header        
                      | response-header        
                      | entity-header ) CRLF)  
                     CRLF
                     [ message-body ]
-			
+			```
 - Status-Line
 `Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF`		
 
@@ -129,7 +132,7 @@ Ta có thể nhận biết thông tin các dòng như:
 </ul>
 
 - Chi tiết Status-Code
-
+```
 	       | "100": Tiếp tục 
 	       | "101": Switching Protocols 
 	       | "200": OK 
@@ -169,7 +172,7 @@ Ta có thể nhận biết thông tin các dòng như:
 	       | "502": Bad Cổng 
 	       | "503": Service Unavailable 
 	       | "504": Gateway Time-out 
-	       | "505": HTTP Version không được hỗ trợ 
+	       | "505": HTTP Version không được hỗ trợ ```
 	   
 - Bắt gói tin HTTP Request bằng WireShark
 
@@ -192,13 +195,13 @@ Ta có thể nhận biết thông tin các dòng như:
 ###Bước2:Cấu hình cơ bản
 `vi /etc/httpd/conf/httpd.conf`
 - Sửa thông tin các dòng
-
-# line 44: change
+```
+#line 44: change
 ServerTokens Prod
-# line 76: change to ON
+#line 76: change to ON
 KeepAlive On
-# line 262: Admin's address
-ServerAdmin root@server.world
+#line 262: Admin's address
+ServerAdmin 192.168.100.18
 # line 338: change
 AllowOverride All
 # line 276: change to your server's name
@@ -209,6 +212,7 @@ DirectoryIndex index.html index.htm
 ServerSignature Off
 # line 759: comment out
 #AddDefaultCharset UTF-8
+```
 
 - Khởi động webserver bằng lệnh
 `/etc/rc.d/init.d/httpd start`
