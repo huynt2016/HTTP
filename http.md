@@ -95,6 +95,15 @@
 
 <img src="http://img.prntscr.com/img?url=http://i.imgur.com/VrRMjLI.png">
 
+Ta có thể nhận biết thông tin các dòng như:
+- GET: Đây là bản tin GET của server và dùng phiên bản HTTP 1.1
+- Host: Địa chỉ truy cập đến server là 192.168.100.18
+- Connection keep alive: Server giữ phiên kết nối sau khi gửi dữ liệu Client gửi yêu cầu
+- Accept: Báo cho server biết web-client có thể đọc được dữ liệu nào.
+- User-Agent: Trình duyệt Client sử dụng
+- Accept-Encoding: Client có thể đọc được kiểu mã hóa nào.
+- Accept-Language: Ngôn ngữ của web-client nếu web-server có ngôn ngữ đó sẽ trả về ngôn ngữ đó cho web-client, nếu không nó sẽ trả về ngôn ngữ mặc định của nó.
+
 ###2.Bản tin Response
 - Là bản tin phản hồi lại của Server sau khi nhận được yêu cầu của Client
 - Cấu trúc:
@@ -165,6 +174,16 @@
 - Bắt gói tin HTTP Request bằng WireShark
 
 <img src="http://img.prntscr.com/img?url=http://i.imgur.com/hWnNLwl.png">
+
+- Trong đó ta có thể đọc các thông tin như:
+<ul>
+<li>Server báo mã 200 kết nối thành công</li>
+<li>Date: Ngày giờ dữ liệu được lưu</li>
+<li>Thông tin máy chủ là Apache</li>
+<li>Keep-Alive: Phiên kết nối sẽ được giữ trong vòng 15s và max=100s</li>
+<li>Connection: Server sẽ giữ phiên kết nối sau khi gửi xong dữ liệu Client yêu cầu</li>
+<li>Content-Type: Kiểu dữ liệu gửi cho Client ở đây là dữ liệu dạng text/html</li>
+</ul>
 
 ##V. Tham khảo
 - https://github.com/NguyenHoaiNam/HTTP--Hypertext-transfer-protocol
