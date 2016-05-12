@@ -185,7 +185,52 @@ Ta có thể nhận biết thông tin các dòng như:
 <li>Content-Type: Kiểu dữ liệu gửi cho Client ở đây là dữ liệu dạng text/html</li>
 </ul>
 
-##V. Tham khảo
+##V.Cài đặt Web-Server trên Centos
+###Bước1:Cài đặt gói Apache bằng lệnh
+`yum -y install httpd`
+
+###Bước2:Cấu hình cơ bản
+`vi /etc/httpd/conf/httpd.conf`
+- Sửa thông tin các dòng
+# line 44: change
+ServerTokens Prod
+# line 76: change to ON
+KeepAlive On
+# line 262: Admin's address
+ServerAdmin root@server.world
+# line 338: change
+AllowOverride All
+# line 276: change to your server's name
+ServerName www.server.world:80
+# line 402: add file name that it can access only with directory's name
+DirectoryIndex index.html index.htm
+# line 536: change
+ServerSignature Off
+# line 759: comment out
+#AddDefaultCharset UTF-8
+- Khởi động webserver bằng lệnh
+`/etc/rc.d/init.d/httpd start`
+
+`chkconfig httpd on`
+###Bước 3:Tạo trang html test
+- Vào trang index bằng lệnh
+`vi /var/www/html/index.html`
+- Tạo thông tin trang
+
+<html>
+<body>
+<div style="width: 100%; font-size: 40px; font-weight: bold; text-align: center;">
+Test Page
+</div>
+</body>
+</html>
+
+- Truy cập địa chỉ webserver và kiểm tra kết quả
+
+<img src="http://img.prntscr.com/img?url=http://i.imgur.com/SR4v0Zs.png">
+
+##VI. Tham khảo
 - https://github.com/NguyenHoaiNam/HTTP--Hypertext-transfer-protocol
 - https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Server_response
 - https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-03.html#request.header.fields
+- http://www.server-world.info/en/note?os=CentOS_6&p=httpd&f=1
