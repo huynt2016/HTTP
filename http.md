@@ -116,46 +116,46 @@
 - Chi tiết Status-Code
 
    Status-Code = 
-       | "100": Tiếp tục 
-       | "101": Switching Protocols 
-       | "200": OK 
-       | "201": Tạo 
-       | "202": Được chấp nhận 
-       | "203": Thông tin chưa được 
-       | "204": Không có nội dung 
-       | "205": Đặt lại nội dung 
-       | "206": Nội dung Một phần 
-       | "300": Có nhiều lựa chọn 
-       | "301": Moved Permanently 
-       | "302": Tìm thấy 
-       | "303": Xem Khác 
-       | "304": Không thay đổi 
-       | "305": Sử dụng Proxy 
-       | "307": Temporary Redirect 
-       | "400": Bad Request 
-       | "401": trái phép 
-       | "402": Yêu cầu thanh toán 
-       | "403": Cấm 
-       | "404": Không tìm thấy 
-       | "405": Phương thức không được phép 
-       | "406": Không được chấp nhận 
-       | "407": Proxy Yêu cầu Chứng thực 
-       | "408": Thời gian yêu cầu ra 
-       | "409": Xung đột 
-       | "410": Cuốn 
-       | "411": Bắt buộc Chiều dài 
-       | "412": Điều kiện tiên quyết không 
-       | "413": Yêu cầu Entity Too Large 
-       | "414": Yêu cầu-URI Too Large 
-       | "415": không được hỗ trợ loại truyền thông 
-       | "416": Yêu cầu dao không phù 
-       | "417": Kỳ vọng Không 
-       | "500": Lỗi máy chủ nội bộ 
-       | "501": Không thực hiện 
-       | "502": Bad Cổng 
-       | "503": Service Unavailable 
-       | "504": Gateway Time-out 
-       | "505": HTTP Version không được hỗ trợ 
+	       | "100": Tiếp tục 
+	       | "101": Switching Protocols 
+	       | "200": OK 
+	       | "201": Tạo 
+	       | "202": Được chấp nhận 
+	       | "203": Thông tin chưa được 
+	       | "204": Không có nội dung 
+	       | "205": Đặt lại nội dung 
+	       | "206": Nội dung Một phần 
+	       | "300": Có nhiều lựa chọn 
+	       | "301": Moved Permanently 
+	       | "302": Tìm thấy 
+	       | "303": Xem Khác 
+	       | "304": Không thay đổi 
+	       | "305": Sử dụng Proxy 
+	       | "307": Temporary Redirect 
+	       | "400": Bad Request 
+	       | "401": trái phép 
+	       | "402": Yêu cầu thanh toán 
+	       | "403": Cấm 
+	       | "404": Không tìm thấy 
+	       | "405": Phương thức không được phép 
+	       | "406": Không được chấp nhận 
+	       | "407": Proxy Yêu cầu Chứng thực 
+	       | "408": Thời gian yêu cầu ra 
+	       | "409": Xung đột 
+	       | "410": Cuốn 
+	       | "411": Bắt buộc Chiều dài 
+	       | "412": Điều kiện tiên quyết không 
+	       | "413": Yêu cầu Entity Too Large 
+	       | "414": Yêu cầu-URI Too Large 
+	       | "415": không được hỗ trợ loại truyền thông 
+	       | "416": Yêu cầu dao không phù 
+	       | "417": Kỳ vọng Không 
+	       | "500": Lỗi máy chủ nội bộ 
+	       | "501": Không thực hiện 
+	       | "502": Bad Cổng 
+	       | "503": Service Unavailable 
+	       | "504": Gateway Time-out 
+	       | "505": HTTP Version không được hỗ trợ 
 	   
 ##V. Tham khảo
 - https://github.com/NguyenHoaiNam/HTTP--Hypertext-transfer-protocol
