@@ -44,9 +44,11 @@
 
 ####a. Request-Line  
 - Cấu trúc:
+
 `Request-Line   = Method SP Request-URI SP HTTP-Version CRLF`
 	
 - Ví dụ:
+
 `GET http://www.example.org/pub/WWW/TheProject.html HTTP/1.1`
 	
 - Danh sách Method:
@@ -71,6 +73,7 @@
 
 ####b. Request-header
 - Cấu trúc:
+
    	request-header = Accept                   
                    | Accept-Charset       
                    | Accept-Encoding          
