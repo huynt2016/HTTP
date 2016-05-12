@@ -138,13 +138,13 @@
 	       | "305": Sử dụng Proxy 
 	       | "307": Temporary Redirect 
 	       | "400": Bad Request 
-	       | "401": trái phép 
+	       | "401": Trái phép 
 	       | "402": Yêu cầu thanh toán 
 	       | "403": Cấm 
 	       | "404": Không tìm thấy 
 	       | "405": Phương thức không được phép 
 	       | "406": Không được chấp nhận 
-	       | "407": Proxy Yêu cầu Chứng thực 
+	       | "407": Proxy yêu cầu Chứng thực 
 	       | "408": Thời gian yêu cầu ra 
 	       | "409": Xung đột 
 	       | "410": Cuốn 
@@ -153,7 +153,7 @@
 	       | "413": Yêu cầu Entity Too Large 
 	       | "414": Yêu cầu-URI Too Large 
 	       | "415": không được hỗ trợ loại truyền thông 
-	       | "416": Yêu cầu dao không phù 
+	       | "416": Yêu cầu không phù hợp
 	       | "417": Kỳ vọng Không 
 	       | "500": Lỗi máy chủ nội bộ 
 	       | "501": Không thực hiện 
