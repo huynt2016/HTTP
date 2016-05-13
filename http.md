@@ -175,7 +175,7 @@ Ta có thể nhận biết thông tin các dòng như:
 	       | "505": HTTP Version không được hỗ trợ
 ```
 	   
-- Bắt gói tin HTTP Request bằng WireShark
+- Bắt gói tin HTTP Response bằng WireShark
 
 <img src="http://img.prntscr.com/img?url=http://i.imgur.com/hWnNLwl.png">
 
