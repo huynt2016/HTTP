@@ -134,6 +134,7 @@ Ta có thể nhận biết thông tin các dòng như:
   </ul>
 
 - Chi tiết Status-Code
+
 ```
 	       | "100": Tiếp tục 
 	       | "101": Giao thức chuyển mạch
@@ -174,7 +175,8 @@ Ta có thể nhận biết thông tin các dòng như:
 	       | "502": Lỗi Cổng 
 	       | "503": Dịch vụ không sẵn sàng 
 	       | "504": Lỗi Gateway
-	       | "505": HTTP Version không được hỗ trợ ```
+	       | "505": HTTP Version không được hỗ trợ
+```
 	   
 - Bắt gói tin HTTP Request bằng WireShark
 
