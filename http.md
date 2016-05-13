@@ -231,7 +231,7 @@ ServerSignature Off
 `vi /var/www/html/index.html`
 
 - Tạo thông tin trang
-
+```
 <html>
 <body>
 <div style="width: 100%; font-size: 40px; font-weight: bold; text-align: center;">
@@ -239,7 +239,7 @@ Test Page
 </div>
 </body>
 </html>
-
+```
 - Truy cập địa chỉ webserver và kiểm tra kết quả
 
 <img src="http://img.prntscr.com/img?url=http://i.imgur.com/SR4v0Zs.png">
