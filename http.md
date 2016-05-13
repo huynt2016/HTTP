@@ -117,8 +117,7 @@ Ta có thể nhận biết thông tin các dòng như:
                      | entity-header ) CRLF)  
                     CRLF
                     [ message-body ]
-			```
-			
+```
 - Status-Line
 
 `Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF`		
@@ -192,11 +191,15 @@ Ta có thể nhận biết thông tin các dòng như:
 
 ##V.Cài đặt Web-Server trên Centos
 ###Bước1:Cài đặt gói Apache bằng lệnh
+
 `yum -y install httpd`
 
 ###Bước2:Cấu hình cơ bản
+
 `vi /etc/httpd/conf/httpd.conf`
+
 - Sửa thông tin các dòng
+
 ```
 #line 44: change
 ServerTokens Prod
@@ -217,6 +220,7 @@ ServerSignature Off
 ```
 
 - Khởi động webserver bằng lệnh
+
 `/etc/rc.d/init.d/httpd start`
 
 `chkconfig httpd on`
