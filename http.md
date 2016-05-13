@@ -126,7 +126,7 @@ Ta có thể nhận biết thông tin các dòng như:
 
 	- 1xx: Informational - Yêu cầu nhận được, quá trình tiếp tục
 	- 2xx: Success - Các hành động đã được nhận thành công, hiểu và chấp nhận
-	- 3xx: Redirection - hành động tiếp theo phải được thực hiện để hoàn thành theo yêu cầu
+	- 3xx: Redirection - Hành động tiếp theo phải được thực hiện để hoàn thành theo yêu cầu
 	- 4xx: Client Error - Các yêu cầu chứa cú pháp xấu hoặc không thể thực hiện
 	- 5xx: Server Error - Các máy chủ không thực hiện một yêu cầu rõ ràng hợp lệ
 
