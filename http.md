@@ -134,22 +134,22 @@ Ta có thể nhận biết thông tin các dòng như:
 - Chi tiết Status-Code
 ```
 	       | "100": Tiếp tục 
-	       | "101": Switching Protocols 
+	       | "101": Giao thức chuyển mạch
 	       | "200": OK 
-	       | "201": Tạo 
+	       | "201": Khởi tạo 
 	       | "202": Được chấp nhận 
-	       | "203": Thông tin chưa được 
+	       | "203": Thông tin chưa được xác thực 
 	       | "204": Không có nội dung 
-	       | "205": Đặt lại nội dung 
-	       | "206": Nội dung Một phần 
+	       | "205": Làm mới lại nội dung 
+	       | "206": Một phần nội dung  
 	       | "300": Có nhiều lựa chọn 
 	       | "301": Moved Permanently 
 	       | "302": Tìm thấy 
 	       | "303": Xem Khác 
 	       | "304": Không thay đổi 
 	       | "305": Sử dụng Proxy 
-	       | "307": Temporary Redirect 
-	       | "400": Bad Request 
+	       | "307": Chuyển hướng tạm thời 
+	       | "400": Yêu cầu lỗi 
 	       | "401": Trái phép 
 	       | "402": Yêu cầu thanh toán 
 	       | "403": Cấm 
@@ -162,16 +162,16 @@ Ta có thể nhận biết thông tin các dòng như:
 	       | "410": Cuốn 
 	       | "411": Bắt buộc Chiều dài 
 	       | "412": Điều kiện tiên quyết không 
-	       | "413": Yêu cầu Entity Too Large 
-	       | "414": Yêu cầu-URI Too Large 
+	       | "413": Yêu cầu Entity quá lớn 
+	       | "414": Yêu cầu-URI quá lớn 
 	       | "415": không được hỗ trợ loại truyền thông 
 	       | "416": Yêu cầu không phù hợp
 	       | "417": Kỳ vọng Không 
 	       | "500": Lỗi máy chủ nội bộ 
 	       | "501": Không thực hiện 
-	       | "502": Bad Cổng 
-	       | "503": Service Unavailable 
-	       | "504": Gateway Time-out 
+	       | "502": Lỗi Cổng 
+	       | "503": Dịch vụ không sẵn sàng 
+	       | "504": Lỗi Gateway
 	       | "505": HTTP Version không được hỗ trợ ```
 	   
 - Bắt gói tin HTTP Request bằng WireShark
