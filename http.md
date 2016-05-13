@@ -125,13 +125,11 @@ Ta có thể nhận biết thông tin các dòng như:
 
 - Các chữ số đầu tiên của Status-Code định nghĩa lớp của phản ứng. Hai chữ số cuối cùng không có bất kỳ vai trò phân loại. Có 5 giá trị cho các chữ số đầu tiên:
 
-  <ul>
-  <li>1xx: Informational - Yêu cầu nhận được, quá trình tiếp tục</li>
-  <li>2xx: Success - Các hành động đã được nhận thành công, hiểu và chấp nhận</li>
-  <li>3xx: Redirection - hành động tiếp theo phải được thực hiện để hoàn thành theo yêu cầu</li>
-  <li>4xx: Client Error - Các yêu cầu chứa cú pháp xấu hoặc không thể thực hiện</li>
-  <li>5xx: Server Error - Các máy chủ không thực hiện một yêu cầu rõ ràng hợp lệ</li>
-  </ul>
+	- 1xx: Informational - Yêu cầu nhận được, quá trình tiếp tục
+	- 2xx: Success - Các hành động đã được nhận thành công, hiểu và chấp nhận
+	- 3xx: Redirection - hành động tiếp theo phải được thực hiện để hoàn thành theo yêu cầu
+	- 4xx: Client Error - Các yêu cầu chứa cú pháp xấu hoặc không thể thực hiện
+	- 5xx: Server Error - Các máy chủ không thực hiện một yêu cầu rõ ràng hợp lệ
 
 - Chi tiết Status-Code
 
